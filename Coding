@@ -1,0 +1,55 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class LTQ1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int x = 0;
+        int y =0;
+        int z;
+        int OddNumbers = 0;
+        int EvenNumbers = 0;
+        Scanner a = new Scanner(System.in);
+
+        System.out.print("How many numbers you want to type in: ");
+        z = a.nextInt();
+
+        while(y <= z)
+        {
+            y++;
+            System.out.print("Please enter a number : ");
+            x = a.nextInt();
+  
+            if (x % 2 == 0)
+            {     
+            	System.out.println(x + " is an even number!");
+                  EvenNumbers = EvenNumbers + x;
+            }
+            else
+            {      
+            	System.out.println(x + " is an odd number!");
+            	  OddNumbers = OddNumbers + x;  
+            }
+
+            if(y == z)
+            {
+                break;
+            }
+        }
+
+        if (y == z)
+        {         
+            System.out.println("\nByeBye!");
+        }
+
+        if (x <= 0)
+        {
+            System.out.print("Please enter the correct number!");
+        }
+    }
+	
+
+
+	}
