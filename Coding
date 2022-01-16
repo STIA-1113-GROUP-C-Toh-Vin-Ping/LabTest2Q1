@@ -44,7 +44,7 @@ public class LTQ1 {
             System.out.println("\nByeBye!");
         }
 
-        if (x <= 0)
+        if (x == 0)
         {
             System.out.print("Please enter the correct number!");
         }
